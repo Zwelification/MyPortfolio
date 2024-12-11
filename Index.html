@@ -10,10 +10,21 @@
 <body class="HOME">
     <div class="Main">
 
-        <nav>
-           
+        <nav class="desk">
             <ul>
-
+    
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Projects.html">PROJECTS</a></li> 
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <div class="menu-icon" onclick="menu()">
+                <box-icon name='menu' color="#0757F1"></box-icon>
+            </div>
+            <ul class="menu">
+    
                 <li><a href="Index.html">HOME</a></li>
                 <li><a href="About.html">ABOUT</a></li>
                 <li><a href="Projects.html">PROJECTS</a></li> 
@@ -40,14 +51,17 @@
         <div class="footer">
         <p>&copy; Zweli Nkosi All Rights Reserved</p>
         <ul class="social-links">
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><box-icon name='github' type='logo' color='#1257da' ></box-icon><a href="#">Github</a></li>
+            <li><box-icon name='facebook-circle' type='logo' color='#0757f1' ></box-icon></box-icon><a href="#">Facebook</a></li>
+            <li><box-icon name='twitter' type='logo' color='#0c2bee' ></box-icon><a href="#">Twitter</a></li>
+            <li><box-icon type='logo' name='linkedin-square'></box-icon><a href="#">LinkedIn</a></li>
         </ul>
     </div>
     </footer>
 </section>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="scripts.js"></script>
 </body>
 
 </html>

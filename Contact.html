@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body >
+<body class="bg-pic">
     <div class="CONTACT">
-   <nav>
+   <nav class="desk">
         <ul>
+
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Projects.html">PROJECTS</a></li> 
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile">
+        <div class="menu-icon" onclick="menu()">
+            <box-icon name='menu' color="#0757F1"></box-icon>
+        </div>
+        <ul class="menu">
 
             <li><a href="Index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
@@ -22,9 +35,9 @@
         <div class="contact-info">
             <h3>Contact Information</h3>
             <ul>
-                <li><strong>Email:</strong> siyethembazweli1@gmail.com</li>
-                <li><strong>Phone:</strong> 0823920265</li>
-                <li><strong>Address:</strong> 471 Gabaron St, Ehlanzeni, Tembisa</li>
+                <li><box-icon name='envelope'></box-icon><strong>Email:</strong> siyethembazweli1@gmail.com</li>
+                <li><box-icon name='phone' color='#2c3883' ></box-icon><strong>Phone:</strong> 0823920265</li>
+                <li><box-icon name='current-location' color='#23d279' ></box-icon><strong>Address:</strong> 471 Gabaron St, Ehlanzeni, Tembisa</li>
             </ul>
         </div>
     </section>
@@ -42,5 +55,8 @@
             </ul>
         </div>
         </footer>
+
+        
+        <script src="scripts.js"></script>
 </body>
 </html>

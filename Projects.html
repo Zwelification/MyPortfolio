@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="proj.css">
 </head>
-<body >
+<body class="bg-pic">
     <div class="PROJECT">
-   <nav>
+      <nav class="desk">
         <ul>
 
             <li><a href="Index.html">HOME</a></li>
@@ -16,23 +17,70 @@
             <li><a href="Projects.html">PROJECTS</a></li> 
             <li><a href="Contact.html">CONTACT</a></li>
         </ul>
+    </nav>
+    <nav class="mobile">
+        <div class="menu-icon" onclick="menu()">
+            <box-icon name='menu' color="#0757F1"></box-icon>
+        </div>
+        <ul class="menu">
 
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Projects.html">PROJECTS</a></li> 
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
     </nav>
     </div>
-    <div class="project">
-        <h3>Project 1: [Cat Photo App]</h3>
-        <p>Descript.</p>
-        <a href=" https://zwelification.github.io/CatPhotoApp/" target="_blank">Visit Project</a>
-        <a href="https://github.com/Zwelification/project-repo" target="_blank">View Code on GitHub</a> 
-        <img src="project1-image.jpg" alt="Screenshot of Project 1">
+  
+    <div style="padding: 100px; padding-bottom: 12%;align-items: center;">
+      <h1>My Projects</h1>
+      <hr>
+      
+      <div class="row">
+        <div class="gallery">
+          <a target="_blank" href="Capture1.JPG">
+            <img src="cofee.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <br>
+      
+          <div class="desc">A simple Cafe Menu project that displays the menu and prices of the Cafe. The projects was created using CSS and HTML only.</div>
+          <div class="webutton">
+            <a href="https://zwelification.github.io/CoffeeCafe/" class="button" target="_blank">View Project</a>
+          </div>
+        </div>
+      <!-- </div> -->
+      
+      
+      <!-- <div class="responsive"> -->
+        <div class="gallery">
+          <a target="_blank" href="Capture.JPG">
+            <img src="cat.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <br>
+      
+          <div class="desc">A Cat app project made of html only.</div>
+          <div class="webutton">
+          <a href="https://zwelification.github.io/CatPhotoApp/" class="button" target="_blank">View Project</a>
+          </div>
+        </div>
+      
 
-        <h3>Project 2: [Coffee Cafe</h3>
-        <a href="https://zwelification.github.io/CoffeeCafe/" target="_blank">Visit Project</a>
-        <a href="https//github.com/Zwelification/profect-repo" target="_blank">View Code on Github</a>
-        <img src="" alt="Screenshot of Project 2">
+      <!-- <div class="responsive"> -->
+        <div class="gallery">
+          <a target="_blank" href="Capture2.JPG">
+            <img src="justinB.jpeg" alt="Forest" width="600" height="400">
+          </a>
+          <br>
+      
+          <div class="desc">A tribute to one of my favourate singers, aka Justin Beaber.</div>
+          <div class="webutton">
+          <a href="https://zwelification.github.io/My-Icon/" class="button" target="_blank">View Project</a>
+          </div>
+        </div>
       </div>
-    
 
+      </div>
+      
     <section class="footer-sec">
         <footer>
             <div class="footer">
@@ -45,5 +93,6 @@
             </ul>
         </div>
         </footer>
+        <script src="scripts.js"></script>
 </body>
 </html>

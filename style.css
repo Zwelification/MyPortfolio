@@ -71,37 +71,81 @@ body {
     font-family: Arial, sans-serif;
 }
 
-nav {
+.desk {
     background-color: #333;
     color: white;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
 }
 
-nav ul {
+.desk ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+.desk ul li {
     display: inline-block;
     margin-right: 20px;
 }
 
-nav ul li a {
+.desk ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-nav ul li a:hover {
+.desk ul li a:hover {
     background-color: #575757;
     border-radius: 5px;
+}
+
+/* responsive nav */
+
+.mobile{
+    position: relative;
+    display: none;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    max-height: 0;
+    transition: all .5s ease-out;
+    z-index: 100;
+}
+
+.menu-icon{
+    padding: 16px 16px 0 0;
+    height: 24px;
+}
+
+.menu.openMenu{
+    max-height: 300px;
+}
+
+.menu a{
+    color: #fff;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: inline-block;
+    }
 }
 
 /* Ensures the main content starts below the navigation bar */
@@ -143,14 +187,17 @@ nav ul li a:hover {
 
 .about-description h2 {
     font-size: 2rem;
-    color: #444;
+    color: white;
     margin-bottom: 10px;
 }
 
 .about-description p {
-    font-size: 1.1rem;
+    font-size:1rem;
     line-height: 1.8;
-    color: #555;
+    color: black;
+    background-color:white;
+    margin: auto;
+    max-width: 1000px; 
 }
 
 /* Key Points Section */
@@ -166,7 +213,7 @@ nav ul li a:hover {
 .key-points h3 {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color:black;
     margin-bottom: 20px;
 }
 
@@ -177,7 +224,7 @@ nav ul li a:hover {
 
 .key-points ul li {
     font-size: 1.2rem;
-    color: #555;
+    color:black;
     margin-bottom: 10px;
 }
 
@@ -203,6 +250,7 @@ footer a:hover {
     background-color: #f4f4f4;
     padding: 40px 20px;
     text-align: center;
+    margin: 11.5rem 0;
 }
 
 .contact-info h3 {
@@ -260,7 +308,7 @@ footer{
 }
 .footer-sec{
     max-width: 100%;
-    margin-top: 20rem;   
+    margin-top: 10rem;   
 }
 .footer-cont{
     max-width:100%;
@@ -277,4 +325,41 @@ footer{
 .hero img{
     height: auto;
     width: 100%;
+}
+body.Contact{
+    
+}
+
+.bg-pic{
+    background-image: url(bg.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+@media (width < 600px) {
+    .hero{
+        flex-direction: column;
+        margin-inline: 4%;
+        padding-top: 4rem;
+    }
+
+    .info{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-sec{
+        margin-top: 2rem;
+    }
+
+    .footer ul li a{
+        font-weight: normal;
+    }
+
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+    }
 }
